@@ -1,0 +1,39 @@
+$bgColor: #ccc; 
+$messageBgColor: #6139F2; 
+$errorBgColor: #F2E339; 
+$warningBgColor: #F22F3C; 
+$successBgColor: #4CF270; 
+$textColor: #fff; 
+ 
+* { 
+  margin: 0; 
+  padding: 0; 
+} 
+ 
+body { 
+  background-color: $bgColor; 
+} 
+ 
+.message { 
+  border: 1px solid #000; 
+  background-color: $messageBgColor; 
+  color: $textColor; 
+  padding: 15px 20px; 
+  margin: 15px; 
+  font-family: Arial, sans; 
+} 
+ 
+.error { 
+  @extend .message; 
+  background-color: $errorBgColor; 
+} 
+ 
+.warning { 
+  @extend .message; 
+  background-color: $warningBgColor; 
+} 
+ 
+.success { 
+  @extend .message; 
+  background-color: $successBgColor; 
+} 
